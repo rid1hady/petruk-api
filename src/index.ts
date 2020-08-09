@@ -1,13 +1,13 @@
-import "dotenv/config";
-import express from "express";
-import bodyParser from "body-parser";
-import morgan from "morgan";
-import mongoose from "mongoose";
-import cors from "cors";
-import routes from "./routes";
+import 'dotenv/config';
+import express from 'express';
+import bodyParser from 'body-parser';
+import morgan from 'morgan';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import routes from './routes';
 
 const app = express();
-const port = process.env.PORT || "3000";
+const port = process.env.PORT || '3000';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_URI, {

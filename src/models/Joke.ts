@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 export type JokeDocument = mongoose.Document & {
   text: string;
@@ -14,4 +14,4 @@ const jokeSchema = new mongoose.Schema({
   timestamps: true
 });
 
-export const Joke = mongoose.model<JokeDocument>("Joke", jokeSchema);
+export const Joke = mongoose.model<JokeDocument>('Joke', jokeSchema);

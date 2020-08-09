@@ -1,5 +1,5 @@
-import { Joke, JokeDocument } from "../models/Joke";
-import { Request, Response } from "express";
+import { Joke, JokeDocument } from '../models/Joke';
+import { Request, Response } from 'express';
 
 export const getRandomJoke = async (_req: Request, res: Response): Promise<any> => {
   const count = await Joke.countDocuments();
